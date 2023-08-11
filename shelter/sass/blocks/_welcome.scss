@@ -1,0 +1,39 @@
+.welcome {
+    background: url(../img/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+
+    &__wrapper {
+        padding: 90px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        max-width: 470px;
+        padding-top: 163px;
+    }
+
+    &__title {
+        width: 350px;
+        font-family: 'Georgia';
+        font-size: 44px;
+        line-height: 130%;
+        color: #FFFFFF;
+    }
+
+    &__desc {
+        padding-top: 42px;
+        padding-bottom: 41px;
+        font-size: 15px;
+        line-height: 160%;
+        color: #CDCDCD;
+    }
+
+    &__img {
+        max-height: 728px;
+    }
+
+    &__btn {
+        text-decoration: none;
+        display: inline-block;
+    }
+}

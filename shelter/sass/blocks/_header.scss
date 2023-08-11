@@ -1,0 +1,98 @@
+.header {
+    z-index: 0;
+
+    &__wrapper {
+        padding-top: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        padding-top: 5px;
+        text-decoration: none;
+    }
+
+    &__title {
+        font-family: 'Georgia';
+        font-size: 32px;
+        letter-spacing: 0.06em;
+        color: #F1CDB3;
+    }
+
+    &__subtitle {
+        padding-top: 10px;
+        padding-left: 4px;
+        font-size: 13px;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+    }
+
+    .menu {
+        list-style: none;
+        display: flex;
+
+        &__item:last-child .menu__link {
+            margin-right: 0;
+
+        }
+
+        &__link {
+            text-decoration: none;
+            color: #CDCDCD;
+            margin: 0 18px;
+            padding: 4px 0;
+            font-size: 15px;
+            line-height: 24px;
+            transition: all 200ms ease;
+
+            &:hover {
+                color: #FAFAFA;
+                border-bottom: 3px solid #F1CDB3;
+            }
+        }
+    }
+
+    .active {
+        color: #FAFAFA;
+        border-bottom: 3px solid #F1CDB3;
+    }
+
+
+    &-light {
+        .header {
+            &__wrapper {
+                padding: 25px 0 29px 0;
+            }
+
+            background: #FFFFFF;
+
+            &__title {
+                color: #545454;
+            }
+
+            &__subtitle {
+                color: #292929;
+            }
+
+        }
+
+        .menu__link {
+            color: #545454;
+
+            &:hover {
+                color: #292929;
+            }
+        }
+
+        .active {
+            color: #292929;
+        }
+
+    }
+}
+
+
+.hamburger {
+    display: none;
+}

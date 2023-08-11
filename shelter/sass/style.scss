@@ -1,0 +1,55 @@
+@import 'base/fonts';
+
+
+* {
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media (max-width: 1240px) {
+        max-width: 950px;
+    }
+
+    @media (max-width: 991px) {
+        max-width: 750px;
+    }
+
+    @media (max-width: 768px) {
+        padding: 0 30px;
+    }
+
+    @media (max-width: 575px) {
+        max-width: 575px;
+        padding: 0 10px;
+    }
+}
+
+.hide-overflow {
+    overflow: hidden;
+}
+
+
+@import 'blocks/buttons';
+
+@import 'blocks/header';
+@import 'blocks/welcome';
+@import 'blocks/about';
+@import 'blocks/slider';
+@import 'blocks/help';
+@import 'blocks/donation';
+@import 'blocks/pets';
+@import 'blocks/footer';
+@import 'blocks/popup';
+
+@import 'blocks/media';
+
+
+// @import 'blocks/modal';
+// @import 'blocks/forms';

@@ -1,0 +1,123 @@
+.slider {
+    background: #F6F6F6;
+    padding: 81px 0 100px 0;
+
+    &__title {
+        max-width: 400px;
+        text-align: center;
+        margin: 0 auto;
+        font-family: 'Georgia';
+        font-size: 35px;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+        color: #545454;
+    }
+
+    &__navigation {
+        position: relative;
+    }
+
+    &__prev,
+    &__next {
+        position: absolute;
+        bottom: 246px;
+        width: 52px;
+        height: 52px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #F6F6F6;
+        border: 2px solid #F1CDB3;
+        border-radius: 100px;
+        transition: all 400ms ease;
+        cursor: pointer;
+
+        &:hover {
+            background: #FDDCC4;
+            border: 2px solid #FDDCC4;
+        }
+    }
+
+    &__prev {
+        left: 0;
+    }
+
+    &__next {
+        transform: rotate(180deg);
+        right: 0;
+    }
+
+    &__wrapper {
+        display: block;
+        margin: auto;
+        overflow: hidden;
+        width: 1080px;
+    }
+
+    &__inner {
+        padding-top: 58px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 300%;
+        display: flex;
+        transition: all 0.5s ease 0s;
+        transform: translateX(0px);
+    }
+
+    .card {
+        margin: 0 45px 55px 45px;
+        background: #FAFAFA;
+        border-radius: 9px;
+        width: 270px;
+        text-decoration: none;
+        transition: all 400ms ease;
+        padding-bottom: 30px;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            background: #FFFFFF;
+
+            .card__button {
+                background: #FDDCC4;
+                border: 2px solid #FDDCC4;
+            }
+        }
+
+
+
+
+        &__title {
+            padding-top: 26px;
+            font-family: 'Georgia';
+            font-size: 20px;
+            text-align: center;
+            letter-spacing: 0.06em;
+            color: #545454;
+        }
+
+        &__link {
+            text-decoration: none;
+        }
+
+        &__button {
+            padding: 13px 43px;
+            margin: 31px auto 0 auto;
+            display: block;
+            border: 2px solid #F1CDB3;
+            background: #FAFAFA;
+
+        }
+    }
+
+    &__link {
+        text-align: center;
+    }
+
+    &__button {
+        text-decoration: none;
+        display: inline-block;
+        margin: 5px auto 0 auto;
+    }
+}

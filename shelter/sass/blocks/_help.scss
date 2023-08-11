@@ -1,0 +1,44 @@
+.help {
+    background: #FFFFFF;
+    padding: 81px 0 45px 0;
+
+    &__title {
+        font-family: 'Georgia';
+        font-size: 35px;
+        line-height: 130%;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: #545454;
+        width: 310px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__items {
+        padding-top: 58px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 120px;
+    }
+
+    &__item {
+        margin-bottom: 55px;
+    }
+
+    &__img {
+        display: flex;
+        justify-content: space-around;
+        height: 60px;
+    }
+
+    &__desc {
+        padding-top: 30px;
+        font-family: 'Georgia';
+        font-size: 20px;
+        line-height: 115%;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: #545454;
+    }
+}
